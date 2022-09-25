@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   font-family: avenir;
   background-color: #EDEAE7;
@@ -29,8 +37,8 @@ header h1 a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  height: 40px;
-  width: 120px;
+  height: 30px;
+  width: 107px;
   border-radius: 5px;
   color: white;
   background: #B9484E;
@@ -67,16 +75,15 @@ ul li a {
   font-size: small;
   transition: 0.5s;
 }
-ul li a .linkedin {
+ul li a .icon {
   height: 30px;
-  width: 80px;
 }
 ul li a img {
   height: 20px;
   width: auto;
 }
 
-.linkedin {
+.icon {
   width: 30px;
 }
 
@@ -96,12 +103,8 @@ ul li a img {
 }
 
 .info {
-  flex-wrap: wrap;
-}
-
-.email {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -111,6 +114,81 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stack li {
+  width: 50vw;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.contact-section {
+  animation: fadeIn 1s;
+}
+.contact-section .email {
+  border: 1px lightgray solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-section .email .profile-pic img {
+  border-radius: 20px;
+}
+.contact-section .email legend {
+  color: lightgray;
+}
+.contact-section .email .details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.contact-section .email .details div .categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .email .details div .categories p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .email .details div .category-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .email .details div .category-values p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_stack fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 350px;
+  width: 100px;
+}
+.info_stack fieldset legend {
+  color: lightgray;
 }
 
 /*# sourceMappingURL=style.css.map */

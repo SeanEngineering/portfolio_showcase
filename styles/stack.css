@@ -1,0 +1,70 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.html-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D56839;
+  animation: fadeIn 0.5s;
+}
+
+.css-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3A64E8;
+  animation: fadeIn 0.5s;
+}
+
+.js-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DDB646;
+  animation-delay: 1.5s;
+  animation: fadeIn 0.5s;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  animation: fadeIn 0.5s;
+}
+.language .j-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D93A32;
+  height: inherit;
+  width: 50%;
+  border-start-start-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.language .p-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4975A5;
+  height: inherit;
+  width: 50%;
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sql-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32738C;
+  animation: fadeIn 0.5s;
+}
+
+/*# sourceMappingURL=stack.css.map */

@@ -5,6 +5,11 @@
   align-items: $alignIt;
 }
 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 * {
   font-family: avenir;
   background-color: #EDEAE7;
@@ -29,8 +34,8 @@ header{
     a {
     @include centerflex(column, center, center);
     text-decoration: none;
-    height: 40px;
-    width: 120px;
+    height: 30px;
+    width: 107px;
     border-radius: 5px;
     color:white;
     background: #B9484E;
@@ -60,9 +65,8 @@ ul {
       opacity: 0.6;
       font-size: small;
       transition: 0.5s;
-      .linkedin {
+      .icon {
         height: 30px;
-        width: 80px;
       }
       img {
         height: 20px;
@@ -72,7 +76,7 @@ ul {
   }
 }
 
-.linkedin {
+.icon {
   width: 30px;
 }
 
@@ -90,11 +94,8 @@ ul {
 }
 
 .info {
-  flex-wrap: wrap;
-}
-
-.email {
-  @include centerflex(row, center, center);
+  @include centerflex(column, center, center);
+  
 }
 
 footer{
@@ -103,3 +104,61 @@ footer{
   justify-content: flex-end;
   align-items: center;
 }
+
+.stack {
+  @include centerflex(column, center, center);
+  li {
+    width: 50vw;
+    height: 50px;
+    border-radius: 5px;
+  }
+}
+
+.contact-section {
+  animation: fadeIn 1s;
+  .email {
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    @include centerflex(column, space-around, center);
+    .profile-pic {
+      img {
+        border-radius: 20px;
+      }
+    }
+    legend {
+      color: lightgray
+    }
+    .details {
+      @include centerflex(row, space-around, center);
+      width: 300px;
+      div .categories {
+        @include centerflex(column, center, center);
+        p {
+          @include centerflex(row, center, center);      
+        }
+      }
+      div .category-values {
+        @include centerflex(column, center, center);
+        
+        p {
+          @include centerflex(row, center, center);
+        }
+      }
+    }
+  } 
+}
+
+.info_stack {
+  fieldset {
+    @include centerflex(column, center, center);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 350px;
+    width: 100px;
+    legend {
+      color: lightgray
+    }
+  }
+}
+
+
