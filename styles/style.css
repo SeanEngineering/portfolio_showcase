@@ -1,0 +1,116 @@
+* {
+  font-family: avenir;
+  background-color: #EDEAE7;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+header h1 :hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+header h1 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  color: white;
+  background: #B9484E;
+  font-size: medium;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+}
+ul li :hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: lightgray;
+  opacity: 0.6;
+  font-size: small;
+  transition: 0.5s;
+}
+ul li a .linkedin {
+  height: 30px;
+  width: 80px;
+}
+ul li a img {
+  height: 20px;
+  width: auto;
+}
+
+.linkedin {
+  width: 30px;
+}
+
+.heading-section {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-section h1 {
+  font-size: 50px;
+  height: 10px;
+}
+.heading-section h3 {
+  height: 5px;
+}
+
+.info {
+  flex-wrap: wrap;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
