@@ -34,7 +34,7 @@
   width: 107px;
   border-radius: 5px;
   color: white;
-  background: #B9484E;
+  background: #C03440;
   font-size: medium;
   opacity: 0.8;
   transition: 0.5s;
@@ -257,6 +257,57 @@ footer {
 }
 .timeline__container--right::after {
   left: -12px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+.projects__container {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects__container__title {
+  font-size: 80px;
+  padding-right: 50px;
+}
+.projects__container__content__img {
+  z-index: 0;
+  width: 800px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #C03440;
+  border: 0;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.projects__container__content__img--beta {
+  background-color: #F4F1BB;
+}
+.projects__container__content__img--gamma {
+  background-color: #C7F0BD;
+}
+.projects__container__content__img--theta {
+  background-color: #4C5B61;
+}
+.projects__container__content__img:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.projects__container__content__desc {
+  font-family: Arial;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 45px;
+  left: 16px;
+  z-index: 1;
+  background-color: transparent;
 }
 
 * {

@@ -1,0 +1,52 @@
+@use "../partials/mixins";
+
+.projects{
+  @include mixins.centerflex(column, center, center);
+  width: 50vw;
+  &__container{
+    width: inherit;
+    @include mixins.centerflex(row, space-between, center);
+    &__title{
+      font-size: 80px;
+      padding-right: 50px;
+
+    }
+    &__content{
+      &__img{
+        z-index: 0;
+        width: 800px;
+        height: 100px;
+        border-radius: 5px;
+        background-color: #C03440;
+        border: 0;
+        opacity:0.5;
+        transition: 0.5s;
+        &--beta{
+          background-color: #F4F1BB;
+        }
+        &--gamma {
+          background-color: #C7F0BD;
+
+        }
+        &--theta{
+          background-color: #4C5B61;
+
+        }
+
+        &:hover{
+          opacity: 1;
+          transition: 0.5s;
+        }
+      }
+      &__desc{
+        font-family: Arial;
+        letter-spacing: 3px;;
+        position: relative;
+        bottom: 45px;
+        left: 16px;
+        z-index: 1;
+        background-color: transparent;
+      }
+    }
+  }
+}
