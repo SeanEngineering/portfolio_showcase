@@ -10,35 +10,33 @@
 </head>
 <body>
   <main>
-    <header>
-      <h1><a href="index.html">SEAN GAN</a></h1>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="stack.html">Stack</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a class="icon"href="https://www.linkedin.com/in/sean-gan-engineering/"><img src="../images/new-linkedin-logo-white-black-png.png" alt=""></a></li>
-          <li><a class="icon" href="https://github.com/SeanEngineering?tab=repositories"><img src="../images/25231.png" alt=""></a></li>
-        </ul>
+    <header class="header">
+      <h1 class="header__home"><a href="index.html">SEAN GAN</a></h1>
+      <nav class="header__nav">
+          <a class="header__nav__link" href="about.html">About</a>
+          <a class="header__nav__link" href="stack.html">Stack</a>
+          <a class="header__nav__link" href="contact.html">Contact</a>
+          <a class="header__nav__link" href="projects.html">Projects</a>
+          <a class="header__nav__link header__nav__link--icon" href="https://www.linkedin.com/in/sean-gan-engineering/"><img src="../images/new-linkedin-logo-white-black-png.png" alt=""></a>
+          <a class="header__nav__link header__nav__link--icon" href="https://github.com/SeanEngineering?tab=repositories"><img src="../images/25231.png" alt=""></a>
       </nav>
     </header>
 
     <div class="heading-section">
-      <h1>Stack</h1> 
-      <h3>Languages and skills</h3> 
+      <h1 class="heading-section__h1">Stack</h1> 
+      <h3 class="heading-section__h3">Languages and skills</h3> 
     </div>
     <br>
 
-    <section class="info info_stack">
+    <section class="sec sec--stack">
       <fieldset class="info">
         <legend>///</legend>
-        <ul class="stack">
-          <li class="html-list">HTML</li>
-          <li class="css-list">CSS</li>
-          <li class="js-list">JavaScript</li>
-          <li class="language"> <span class="j-list">Java</span> <span class="p-list">Python</span></li>
-          <li class="sql-list">MySQL</li>
+        <ul class="info__list">
+          <li class="info__list__sec info__list__sec--html">HTML</li>
+          <li class="info__list__sec info__list__sec--css">CSS</li>
+          <li class="info__list__sec info__list__sec--js">JavaScript</li>
+          <li class="info__list__sec info__list__sec__language"> <span class="info__list__sec__language--ja">Java</span> <span class="info__list__sec__language--py">Python</span></li>
+          <li class="info__list__sec info__list__sec--sql">MySQL</li>
         </ul>
       </fieldset>
     </section>
@@ -46,7 +44,6 @@
   </main>
 
   
-
   <footer>
     <p>Designed by Sean Gan 2022</p>
   </footer>

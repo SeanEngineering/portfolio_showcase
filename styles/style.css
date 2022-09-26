@@ -6,19 +6,15 @@
     opacity: 1;
   }
 }
-* {
-  font-family: avenir;
-  background-color: #EDEAE7;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,11 +23,7 @@ header {
   padding-top: 0px;
   margin-top: 0px;
 }
-header h1 :hover {
-  transition: 0.5s;
-  opacity: 1;
-}
-header h1 a {
+.header__home a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,9 +38,11 @@ header h1 a {
   opacity: 0.8;
   transition: 0.5s;
 }
-
-ul {
-  list-style: none;
+.header__home a:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+.header__nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -56,35 +50,167 @@ ul {
   gap: 10px;
   padding-right: 20px;
 }
-ul li :hover {
-  opacity: 1;
-  transition: 0.5s;
-}
-ul li a {
+.header__nav__link {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: black;
-  text-decoration: none;
   height: 30px;
   width: 80px;
   border-radius: 5px;
-  background-color: lightgray;
   opacity: 0.6;
   font-size: small;
+  color: black;
+  background-color: lightgray;
+  text-decoration: none;
   transition: 0.5s;
 }
-ul li a .icon {
-  height: 30px;
+.header__nav__link:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
-ul li a img {
+.header__nav__link--icon {
+  height: 30px;
+  width: 30px;
+}
+.header__nav__link--icon img {
   height: 20px;
-  width: auto;
+  width: 20px;
 }
 
-.icon {
-  width: 30px;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 300px;
+  width: 55vw;
+}
+.info legend {
+  color: lightgray;
+}
+.info__list__sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s;
+  height: 50px;
+  width: 50vw;
+  border-radius: 5px;
+  margin: 5px;
+}
+.info__list__sec--html {
+  background-color: #D56839;
+}
+.info__list__sec--css {
+  background-color: #3A64E8;
+}
+.info__list__sec--js {
+  background-color: #DDB646;
+}
+.info__list__sec__language {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.info__list__sec__language--ja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D93A32;
+  height: inherit;
+  width: 50%;
+  border-start-start-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.info__list__sec__language--py {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4975A5;
+  height: inherit;
+  width: 50%;
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.info__list__sec--sql {
+  background-color: #32738C;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  animation: fadeIn 1s;
+}
+.contact__fs {
+  border: 1px lightgray solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact__fs legend {
+  color: lightgray;
+}
+.contact__fs__ppic img {
+  border-radius: 20px;
+}
+.contact__fs__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.contact__fs__details__cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__fs__details__cat p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact__fs__details__catval {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__fs__details__catval p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: avenir;
+  background-color: #EDEAE7;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .heading-section {
@@ -100,95 +226,6 @@ ul li a img {
 }
 .heading-section h3 {
   height: 5px;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.stack li {
-  width: 50vw;
-  height: 50px;
-  border-radius: 5px;
-}
-
-.contact-section {
-  animation: fadeIn 1s;
-}
-.contact-section .email {
-  border: 1px lightgray solid;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.contact-section .email .profile-pic img {
-  border-radius: 20px;
-}
-.contact-section .email legend {
-  color: lightgray;
-}
-.contact-section .email .details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-}
-.contact-section .email .details div .categories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact-section .email .details div .categories p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.contact-section .email .details div .category-values {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact-section .email .details div .category-values p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.info_stack fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  height: 350px;
-  width: 100px;
-}
-.info_stack fieldset legend {
-  color: lightgray;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+@use "../partials/mixins";
+
+
+.info {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 300px;
+  width: 55vw;
+    legend {
+      color: lightgray
+    }
+  &__list{    
+    &__sec{
+      @include mixins.displayC();
+      animation: fadeIn 0.5s;
+      height: 50px;
+      width: 50vw;
+      border-radius: 5px;
+      margin: 5px;
+      &--html{
+        background-color: #D56839;
+      }
+      &--css{
+        background-color: #3A64E8;
+      }
+      &--js{
+        background-color: #DDB646;
+      }
+      &__language{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &--ja {
+          @include mixins.displayC;
+          background-color: #D93A32;
+          height: inherit;
+          width: 50%;
+          border-start-start-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &--py {
+          @include mixins.displayC();
+          background-color: #4975A5;
+          height: inherit;
+          width: 50%;
+          border-end-end-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+      &--sql{
+        background-color: #32738C;
+      }
+    }
+  }
+}
+
+.sec {
+  @include mixins.centerflex(column, center, center);
+}

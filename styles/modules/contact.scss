@@ -1,0 +1,35 @@
+@use "../partials/mixins";
+
+.contact{
+  animation: fadeIn 1s;
+  &__fs {
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    @include mixins.centerflex(column, space-around, center);
+    legend {
+      color: lightgray
+    }
+    &__ppic {
+      img {
+        border-radius: 20px;
+      }
+    }
+    &__details {
+      @include mixins.centerflex(row, space-around, center);
+      width: 300px;
+      &__cat {
+        @include mixins.centerflex(column, center, center);
+        p {
+          @include mixins.centerflex(row, center, center);      
+        }
+      }
+      &__catval {
+        @include mixins.centerflex(column, center, center);
+        
+        p {
+          @include mixins.centerflex(row, center, center);
+        }
+      }
+    }
+  } 
+}

@@ -1,0 +1,25 @@
+@use "../partials/effects";
+@use "../partials/mixins";
+@use "../partials/palette";
+
+.header{
+  @include mixins.centerflex(row, space-between, center);
+  padding-left: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+  &__home {
+    @include mixins.home-button-style;
+  }
+
+  &__nav{
+    @include mixins.centerflex(row, flex-end, center);
+    gap: 10px;
+    padding-right: 20px;
+    &__link{
+      @include mixins.centerflex(row, center, center);
+      @include mixins.nav-button-style;
+      transition: 0.5s;
+    }
+  }
+}
+
