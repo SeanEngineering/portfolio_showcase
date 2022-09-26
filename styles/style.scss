@@ -21,6 +21,7 @@ body{
   flex-direction: column;
   justify-content: space-between
 }
+
 header{
   @include centerflex(row, space-between, center);
   padding-left: 20px;
