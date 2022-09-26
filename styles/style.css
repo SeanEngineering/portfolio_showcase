@@ -89,7 +89,7 @@ footer {
 .info {
   border: 1px solid lightgray;
   border-radius: 5px;
-  height: 37vh;
+  height: 350px;
   width: 55vw;
 }
 .info legend {
@@ -107,7 +107,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 50px;
   width: 50vw;
   border-radius: 5px;
   margin: 5px;
@@ -159,6 +159,7 @@ footer {
 
 .contact {
   animation: fadeIn 1.2s;
+  height: 55vh;
 }
 .contact__fs {
   border: 1px lightgray solid;

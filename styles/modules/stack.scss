@@ -4,7 +4,7 @@
 .info {
   border: 1px solid lightgray;
   border-radius: 5px;
-  height: 37vh;
+  height: 350px;
   width: 55vw;
     legend {
       color: lightgray
@@ -15,7 +15,7 @@
     padding:0;  
     &__sec{
       @include mixins.displayC();
-      height: 5vh;
+      height: 50px;
       width: 50vw;
       border-radius: 5px;
       margin: 5px;
