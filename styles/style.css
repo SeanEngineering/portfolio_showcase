@@ -298,6 +298,7 @@ footer {
 }
 .projects__container__content__img:hover {
   opacity: 1;
+  height: 200px;
   transition: 0.5s;
 }
 .projects__container__content__desc {
