@@ -22,6 +22,7 @@
   padding-left: 20px;
   padding-top: 0px;
   margin-top: 0px;
+  width: 95vw;
 }
 .header__home a {
   display: flex;
@@ -100,11 +101,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.5s;
   height: 50px;
   width: 50vw;
   border-radius: 5px;
   margin: 5px;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 .info__list__sec--html {
   background-color: #D56839;
@@ -144,16 +146,13 @@ footer {
 .info__list__sec--sql {
   background-color: #32738C;
 }
-
-.sec {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.info__list__sec:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .contact {
-  animation: fadeIn 1s;
+  animation: fadeIn 1.2s;
 }
 .contact__fs {
   border: 1px lightgray solid;
@@ -201,9 +200,62 @@ footer {
   align-items: center;
 }
 
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timeline__container {
+  padding: 0px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.timeline__container::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -12px;
+  background-color: white;
+  border: 2px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline__container--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: right;
+  left: 0;
+}
+.timeline__container--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  left: 50%;
+}
+.timeline__container--right::after {
+  left: -12px;
+}
+
 * {
   font-family: avenir;
   background-color: #EDEAE7;
+  box-sizing: border-box;
 }
 
 body {
@@ -213,7 +265,15 @@ body {
   justify-content: space-between;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading-section {
+  animation: fadeIn 0.8s;
   font-family: Roboto;
   display: flex;
   flex-direction: column;
@@ -226,6 +286,15 @@ body {
 }
 .heading-section h3 {
   height: 5px;
+}
+
+.sec {
+  animation: fadeIn 1.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
 }
 
 /*# sourceMappingURL=style.css.map */

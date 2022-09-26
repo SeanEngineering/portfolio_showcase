@@ -4,10 +4,12 @@
 @use "./partials/mixins";
 @use "./modules/stack.scss";
 @use "./modules/contact.scss";
+@use "./modules/timeline.scss";
 
 * {
   font-family: avenir;
   background-color: #EDEAE7;
+  box-sizing: border-box;
 }
 
 body{
@@ -17,7 +19,15 @@ body{
   justify-content: space-between
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading-section {
+  animation: fadeIn 0.8s;
   font-family: Roboto;
   @include mixins.centerflex(column, center, center);
   h1 {
@@ -29,4 +39,9 @@ body{
   }
 }
 
+.sec {
+  animation: fadeIn 1.2s;
+  @include mixins.centerflex(column, center, center);
+  width: 50vw
+}
 

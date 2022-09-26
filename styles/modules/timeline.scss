@@ -1,0 +1,53 @@
+@use "../partials/mixins";
+
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  &__container{
+    padding: 0px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    &::after{
+      content:'';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -12px;
+      background-color: white;
+      border: 2px solid black;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    &--left{
+      @include mixins.centerflex(column,center,flex-start);
+      text-align: right;
+      left:0;
+    }
+
+    &--right{
+      @include mixins.centerflex(column,center,flex-start);
+      left:50%;
+      &::after{
+        left: -12px;
+      }
+    }
+    
+  }
+}
+
+
