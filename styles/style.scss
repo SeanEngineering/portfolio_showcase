@@ -14,16 +14,11 @@
 
 body{
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
+  @include mixins.centerflex(column, space-between, center);
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include mixins.centerflex(column, center, center);
 }
 
 .heading-section {

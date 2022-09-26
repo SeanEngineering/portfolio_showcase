@@ -87,21 +87,27 @@ footer {
 }
 
 .info {
-  display: flex;
-  align-items: center;
   border: 1px solid lightgray;
   border-radius: 5px;
-  height: 300px;
+  height: 37vh;
   width: 55vw;
 }
 .info legend {
   color: lightgray;
 }
+.info__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 .info__list__sec {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 5vh;
   width: 50vw;
   border-radius: 5px;
   margin: 5px;
@@ -263,6 +269,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 main {

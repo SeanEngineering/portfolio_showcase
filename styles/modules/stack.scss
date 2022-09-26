@@ -2,19 +2,20 @@
 
 
 .info {
-  display: flex;
-  align-items: center;
   border: 1px solid lightgray;
   border-radius: 5px;
-  height: 300px;
+  height: 37vh;
   width: 55vw;
     legend {
       color: lightgray
     }
-  &__list{    
+  &__list{  
+    @include mixins.centerflex(column, center, center);
+    margin:0;
+    padding:0;  
     &__sec{
       @include mixins.displayC();
-      height: 50px;
+      height: 5vh;
       width: 50vw;
       border-radius: 5px;
       margin: 5px;
