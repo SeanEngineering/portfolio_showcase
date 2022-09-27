@@ -20,6 +20,17 @@
     position: relative;
     background-color: inherit;
     width: 50%;
+    @include mixins.phone {
+      h3{
+        font-size: small;
+      }
+      p {
+        font-size: 10px;
+
+      }
+      
+    }
+    
     &::after{
       content:'';
       position: absolute;

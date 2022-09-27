@@ -103,11 +103,14 @@ footer {
 .info {
   border: 1px solid lightgray;
   border-radius: 5px;
-  height: 350px;
+  height: 225px;
   width: 55vw;
 }
 .info legend {
-  color: lightgray;
+  color: black;
+}
+.info--back {
+  height: 170px;
 }
 .info__list {
   display: flex;
@@ -242,6 +245,14 @@ footer {
   background-color: inherit;
   width: 50%;
 }
+@media only screen and (max-width: 600px) {
+  .timeline__container h3 {
+    font-size: small;
+  }
+  .timeline__container p {
+    font-size: 10px;
+  }
+}
 .timeline__container::after {
   content: "";
   position: absolute;
@@ -286,6 +297,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .projects__container h3 {
+    font-size: 30px;
+  }
 }
 .projects__container__title {
   font-size: 80px;

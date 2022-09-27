@@ -4,11 +4,15 @@
 .info {
   border: 1px solid lightgray;
   border-radius: 5px;
-  height: 350px;
+  height: 225px;
   width: 55vw;
     legend {
-      color: lightgray
+      color: black;
     }
+  &--back{
+    height: 170px;
+  }
+
   &__list{  
     @include mixins.centerflex(column, center, center);
     margin:0;

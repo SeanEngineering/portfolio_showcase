@@ -6,6 +6,11 @@
   &__container{
     width: inherit;
     @include mixins.centerflex(row, center, center);
+    @include mixins.phone {
+      h3{
+        font-size: 30px;
+      }
+    }
     &__title{
       font-size: 80px;
       padding-right: 50px;
