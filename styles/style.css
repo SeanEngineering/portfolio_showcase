@@ -24,7 +24,7 @@
   margin-top: 0px;
   width: 95vw;
 }
-.header__home a {
+.header__home__link {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,18 +36,22 @@
   border-radius: 5px;
   color: white;
   background: #C03440;
-  opacity: 0.8;
+  opacity: 0.5;
   transition: 0.5s;
 }
 @media only screen and (max-width: 600px) {
-  .header__home a {
+  .header__home__link {
     text-align: center;
     font-size: 8px;
     width: 30px;
+    transition: 1s;
   }
 }
-.header__home a:hover {
+.header__home__link:hover {
   transition: 0.5s;
+  opacity: 1;
+}
+.header__home__link--select {
   opacity: 1;
 }
 .header__nav {
@@ -77,8 +81,12 @@
   .header__nav__link {
     height: 30px;
     width: 40px;
+    transition: 1s;
     font-size: 10px;
   }
+}
+.header__nav__link--select {
+  opacity: 1;
 }
 .header__nav__link:hover {
   opacity: 1;
@@ -386,5 +394,3 @@ main {
   align-items: center;
   width: 50vw;
 }
-
-/*# sourceMappingURL=style.css.map */

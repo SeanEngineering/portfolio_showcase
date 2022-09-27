@@ -13,5 +13,10 @@
 .sec img {
   border-radius: 10px;
 }
-
-/*# sourceMappingURL=index.css.map */
+@media only screen and (max-width: 600px) {
+  .sec img {
+    width: 80vw;
+    transition: 1s;
+    height: auto;
+  }
+}

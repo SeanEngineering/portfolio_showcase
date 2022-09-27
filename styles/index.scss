@@ -7,5 +7,10 @@
 .sec{
   img{
     border-radius: 10px;
+    @include mixins.phone{
+      width: 80vw;
+      transition: 1s;
+      height: auto;
+    }
   }
 }
