@@ -5,7 +5,7 @@
   width: 50vw;
   &__container{
     width: inherit;
-    @include mixins.centerflex(row, space-between, center);
+    @include mixins.centerflex(row, center, center);
     &__title{
       font-size: 80px;
       padding-right: 50px;
