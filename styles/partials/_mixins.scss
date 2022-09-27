@@ -18,43 +18,32 @@
   100% {opacity: 1;}
 }
 
-@mixin nav-button-style {
-  height: 30px;
-  width: 80px;
-  border-radius: 5px;
-  opacity: 0.6;
-  font-size: small;
-  color: palette.$standard-color;
-  background-color: palette.$button-background;
-  text-decoration: none;
-  &:hover{
-    opacity: 1; transition: 0.5s;
-  }
-  &--icon {
-    height: 30px;
-    width: 30px;
-    img {
-      height: 20px;
-      width: 20px;
-    }
+@mixin phone {
+  @media only screen and (max-width: palette.$xs){
+    @content;
   }
 }
 
-@mixin home-button-style {
-  a {
-    @include centerflex(column, center, center);
-    text-decoration: none;
-    height: 30px;
-    width: 107px;
-    border-radius: 5px;
-    color: palette.$secondary-color;
-    background: palette.$primary-color;
-    font-size: medium;
-    opacity: 0.8;
-    transition: 0.5s;
-      &:hover {
-        transition: 0.5s;
-        opacity: 1;
-      }
-    }
+@mixin tablets-pt {
+  @media only screen and (min-width: (palette.$sm+1)) and (max-width: palette.$md){
+    @content;
+  }
+}
+
+@mixin tablet-ls {
+  @media only screen and (min-width: (palette.$md+1)) and (max-width: palette.$lg){
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: (palette.$lg+1)) and (max-width:$xl){
+    @content;
+  }
+}
+
+@mixin monitor{
+  @media only screen and (min-width: ($xl + 1)) {
+
+  }
 }
