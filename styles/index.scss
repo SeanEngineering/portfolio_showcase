@@ -1,8 +1,14 @@
 @use "./partials/mixins";
 
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+    50% {border-color: black;}
+}
+
 .header {
   animation: fadeIn 0.8s;
 }
+
 
 .sec{
   img{
@@ -14,3 +20,21 @@
     }
   }
 }
+
+.heading-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  
+  &__h1{
+    border-right: 2px solid black;
+    padding-right: 5px;
+    animation: blink-caret 1s step-end infinite;
+  }
+  
+  
+
+
+}
+

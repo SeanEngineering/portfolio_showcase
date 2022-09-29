@@ -12,7 +12,7 @@
   &--back{
     height: 170px;
   }
-
+ 
   &__list{  
     @include mixins.centerflex(column, center, center);
     margin:0;
@@ -25,6 +25,7 @@
       margin: 5px;
       opacity: 0.7;
       transition: 0.5s;
+
       
       &--html{
         background-color: #D56839;
@@ -64,6 +65,30 @@
         opacity: 1;
         transition: 0.5s;
       }
+    }
+  }
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  width: 100vw;
+  gap: 20px;
+  &__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    img{
+      height: 50px;
+      width: 50px;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      opacity: 90%;
     }
   }
 }
