@@ -4,4 +4,4 @@ You have arrived at my portfolio. I will constantly be updating this repo as new
 
 Stayed tuned to see what's next!
 
-- Sean
+-- Sean
