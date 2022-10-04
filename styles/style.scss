@@ -8,7 +8,7 @@
 @use "./modules/project.scss";
 
 * {
-  font-family: avenir;
+  font-family: 'Roboto', avenir, Arial, Helvetica, sans-serif;
   background-color: #EDEAE7;
   box-sizing: border-box;
 }
@@ -24,7 +24,7 @@ main {
 
 .heading-section {
   animation: fadeIn 0.8s;
-  font-family: Roboto;
+  font-family: 'Roboto';
   @include mixins.centerflex(column, center, center);
   h1 {
     font-size: 50px;

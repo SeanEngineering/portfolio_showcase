@@ -385,7 +385,7 @@ footer {
 }
 
 * {
-  font-family: avenir;
+  font-family: "Roboto", avenir, Arial, Helvetica, sans-serif;
   background-color: #EDEAE7;
   box-sizing: border-box;
 }
@@ -407,7 +407,7 @@ main {
 
 .heading-section {
   animation: fadeIn 0.8s;
-  font-family: Roboto;
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   justify-content: center;
