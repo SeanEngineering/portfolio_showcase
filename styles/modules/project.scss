@@ -1,7 +1,8 @@
 @use "../partials/mixins";
 
 .projects{
-  @include mixins.centerflex(column, center, center);
+  @include mixins.centerflex(column, space-around, center);
+  gap: 20px;
   width: 50vw;
   &__container{
     width: inherit;
@@ -20,15 +21,18 @@
       }
     }
     &__content{
+      @include mixins.centerflex(column, center, center);
+      overflow: auto;
+      width: 40vw;
+      height: 100px;
+      opacity:0.5;
+      transition: 0.5s;
+      border-radius: 5px;
+      background-color: #C03440;
+      border: 0;
       &__img{
-        z-index: 0;
-        width: 40vw;
-        height: 100px;
-        border-radius: 5px;
-        background-color: #C03440;
-        border: 0;
-        opacity:0.5;
-        transition: 0.5s;
+        height: auto;
+        width: inherit;
         &--beta{
           background-color: #F4F1BB;
         }
@@ -40,22 +44,28 @@
           background-color: #4C5B61;
 
         }
-
-        &:hover{
-          opacity: 1;
-          height: 200px;
-          transition: 0.5s;
-        }
+      }
+      &:hover{
+        opacity: 1;
+        height: 300px;
+        transition: 0.5s;
       }
       &__desc{
-        font-family: Arial;
-        letter-spacing: 3px;;
-        position: relative;
-        bottom: 45px;
-        left: 16px;
-        z-index: 1;
-        background-color: transparent;
-      }
+        a{
+          z-index: 4;
+          font-family: Arial;
+          letter-spacing: 3px;;
+          position: relative;
+          bottom: 45px;
+          left: 16px;
+          z-index: 1;
+          background-color: transparent;
+          text-decoration: none;
+          color: black;
+        }
+
+        }
+       
     }
   }
 }
