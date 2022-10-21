@@ -333,10 +333,10 @@ footer {
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  width: 50vw;
+  width: 90vw;
 }
 .projects__container {
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -357,17 +357,20 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: auto;
-  width: 40vw;
-  height: 100px;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
   opacity: 0.5;
   transition: 0.5s;
   border-radius: 5px;
   background-color: #C03440;
+  color: white;
   border: 0;
 }
 .projects__container__content__img {
   height: auto;
-  width: inherit;
+  min-height: 200px;
+  width: 100%;
 }
 .projects__container__content__img--beta {
   background-color: #F4F1BB;
@@ -380,7 +383,6 @@ footer {
 }
 .projects__container__content:hover {
   opacity: 1;
-  height: 300px;
   transition: 0.5s;
 }
 .projects__container__content__desc a {
